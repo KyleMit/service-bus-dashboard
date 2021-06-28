@@ -1,0 +1,510 @@
+{
+  "overallStatus": "Error",
+  "topicStatuses": [
+    {
+      "status": "OK",
+      "topicPath": "agency-contact-request",
+      "subscriptionCount": 2,
+      "subscriptionStatuses": [
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Agency.Listener.App",
+          "messageCount": 1,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 1,
+          "scheduledMessageCount": 0
+        },
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.FastPass.Function.App",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        }
+      ]
+    },
+    {
+      "status": "OK",
+      "topicPath": "agency-contact-request-status-changed",
+      "subscriptionCount": 1,
+      "subscriptionStatuses": [
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Search.Function.App",
+          "messageCount": 5,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 5,
+          "scheduledMessageCount": 0
+        }
+      ]
+    },
+    {
+      "status": "Warning",
+      "topicPath": "agency-sold-policies",
+      "subscriptionCount": 3,
+      "subscriptionStatuses": [
+        {
+          "status": "Warning",
+          "subscriptionName": "DealerPolicy.FastPass.Function.App",
+          "messageCount": 60,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 60,
+          "scheduledMessageCount": 0
+        },
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Marketplace.Function.App",
+          "messageCount": 11,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 11,
+          "scheduledMessageCount": 0
+        },
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.V1",
+          "messageCount": 3,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 3,
+          "scheduledMessageCount": 0
+        }
+      ]
+    },
+    {
+      "status": "Error",
+      "topicPath": "audit",
+      "subscriptionCount": 2,
+      "subscriptionStatuses": [
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Audit.Function.App",
+          "messageCount": 5,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 5,
+          "scheduledMessageCount": 0
+        },
+        {
+          "status": "Error",
+          "subscriptionName": "DealerPolicy.FastPass.Function.App",
+          "messageCount": 257,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 257,
+          "scheduledMessageCount": 0
+        }
+      ]
+    },
+    {
+      "status": "OK",
+      "topicPath": "consumer-data-request",
+      "subscriptionCount": 3,
+      "subscriptionStatuses": [
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.ConsumerIdentification.Listener.App",
+          "messageCount": 2,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 2,
+          "scheduledMessageCount": 0
+        },
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.FastPass.Function.App",
+          "messageCount": 1,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 1,
+          "scheduledMessageCount": 0
+        },
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Search.Function.App",
+          "messageCount": 7,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 7,
+          "scheduledMessageCount": 0
+        }
+      ]
+    },
+    {
+      "status": "OK",
+      "topicPath": "deal-changed",
+      "subscriptionCount": 3,
+      "subscriptionStatuses": [
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Agency.Listener.App",
+          "messageCount": 5,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 5,
+          "scheduledMessageCount": 0
+        },
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Payments.Listener.App",
+          "messageCount": 1,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 1,
+          "scheduledMessageCount": 0
+        },
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Search.Function.App",
+          "messageCount": 7,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 7,
+          "scheduledMessageCount": 0
+        }
+      ]
+    },
+    {
+      "status": "OK",
+      "topicPath": "deal-payments-changed",
+      "subscriptionCount": 1,
+      "subscriptionStatuses": [
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Payments.Listener.App",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        }
+      ]
+    },
+    {
+      "status": "OK",
+      "topicPath": "partner-notify-savings",
+      "subscriptionCount": 4,
+      "subscriptionStatuses": [
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Partners.Gateway.2147.Function",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        },
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Partners.Gateway.3742.Function",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        },
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Partners.Gateway.8783.Function",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        },
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Partners.Gateway.SaaS.Function",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        }
+      ]
+    },
+    {
+      "status": "OK",
+      "topicPath": "partner-update-consumer",
+      "subscriptionCount": 4,
+      "subscriptionStatuses": [
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Partners.Gateway.2147.Function",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        },
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Partners.Gateway.3742.Function",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        },
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Partners.Gateway.8783.Function",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        },
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Partners.Gateway.SaaS.Function",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        }
+      ]
+    },
+    {
+      "status": "OK",
+      "topicPath": "pdf-binder-cleanup",
+      "subscriptionCount": 1,
+      "subscriptionStatuses": [
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Content.Pdf.Generator.App",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        }
+      ]
+    },
+    {
+      "status": "OK",
+      "topicPath": "pdf-binder-create",
+      "subscriptionCount": 1,
+      "subscriptionStatuses": [
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Content.Pdf.Generator.App",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        }
+      ]
+    },
+    {
+      "status": "OK",
+      "topicPath": "pdf-cleanup",
+      "subscriptionCount": 1,
+      "subscriptionStatuses": [
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Content.Pdf.Generator.App",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        }
+      ]
+    },
+    {
+      "status": "OK",
+      "topicPath": "pdf-create",
+      "subscriptionCount": 1,
+      "subscriptionStatuses": [
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Content.Pdf.Generator.App",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        }
+      ]
+    },
+    {
+      "status": "OK",
+      "topicPath": "pdf-idcard-cleanup",
+      "subscriptionCount": 1,
+      "subscriptionStatuses": [
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Content.Pdf.Generator.App",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        }
+      ]
+    },
+    {
+      "status": "OK",
+      "topicPath": "pdf-idcard-create",
+      "subscriptionCount": 1,
+      "subscriptionStatuses": [
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Content.Pdf.Generator.App",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        }
+      ]
+    },
+    {
+      "status": "OK",
+      "topicPath": "rating-provider-completed",
+      "subscriptionCount": 1,
+      "subscriptionStatuses": [
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Rating.Processor.App",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        }
+      ]
+    },
+    {
+      "status": "OK",
+      "topicPath": "rating-provider-timeout",
+      "subscriptionCount": 1,
+      "subscriptionStatuses": [
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Rating.Processor.App",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        }
+      ]
+    },
+    {
+      "status": "OK",
+      "topicPath": "rating-rates-updated",
+      "subscriptionCount": 5,
+      "subscriptionStatuses": [
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.FastPass.Function.App",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        },
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Partners.Gateway.2147.Function",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        },
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Partners.Gateway.3742.Function",
+          "messageCount": 1,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 1,
+          "scheduledMessageCount": 0
+        },
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Partners.Gateway.8783.Function",
+          "messageCount": 2,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 2,
+          "scheduledMessageCount": 0
+        },
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Partners.Gateway.SaaS.Function",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        }
+      ]
+    },
+    {
+      "status": "OK",
+      "topicPath": "rating-requested",
+      "subscriptionCount": 2,
+      "subscriptionStatuses": [
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.FastPass.Function.App",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        },
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Rating.Processor.App",
+          "messageCount": 1,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 1,
+          "scheduledMessageCount": 0
+        }
+      ]
+    },
+    {
+      "status": "OK",
+      "topicPath": "rating-requested-bindable",
+      "subscriptionCount": 1,
+      "subscriptionStatuses": [
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Rating.Processor.App",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        }
+      ]
+    },
+    {
+      "status": "OK",
+      "topicPath": "rating-timeout",
+      "subscriptionCount": 2,
+      "subscriptionStatuses": [
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.FastPass.Function.App",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        },
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Marketplace.Function.App",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        }
+      ]
+    },
+    {
+      "status": "OK",
+      "topicPath": "rating-version-published",
+      "subscriptionCount": 1,
+      "subscriptionStatuses": [
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Rating.Vertafore.Watcher.App",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        }
+      ]
+    },
+    {
+      "status": "OK",
+      "topicPath": "user-changed",
+      "subscriptionCount": 1,
+      "subscriptionStatuses": [
+        {
+          "status": "OK",
+          "subscriptionName": "DealerPolicy.Payments.Listener.App",
+          "messageCount": 0,
+          "activeMessageCount": 0,
+          "deadLetterMessageCount": 0,
+          "scheduledMessageCount": 0
+        }
+      ]
+    }
+  ]
+}
