@@ -1,6 +1,6 @@
 import { CircularProgress, Link, makeStyles, Tooltip } from "@material-ui/core"
 import { DataGrid, GridColDef, GridColumns } from '@material-ui/data-grid'
-import {red, green, yellow, orange} from '@material-ui/core/colors';
+import  {red, green, yellow, orange } from '@material-ui/core/colors';
 import { Update, Email, ImportExport, Report, FiberManualRecord } from '@material-ui/icons';
 import { SubscriptionStatus, TopicStatus } from '../types/messages'
 import { nameof, toTitleCase } from "../utilities/utils"
@@ -54,7 +54,7 @@ const useStyles = makeStyles(theme => ({
 
 function ServiceBus() {
     const classes = useStyles();
-    const { data: messages, error, isLoading } = useGetAllQuery("")
+    const { data: messages, isLoading } = useGetAllQuery("")
 
 
     const allColumns: Partial<GridColDef> = {

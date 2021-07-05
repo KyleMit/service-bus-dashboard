@@ -1,5 +1,5 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react'
-import { Messages } from '../types/messages'
+import { Messages } from '../../types/messages'
 
 // Define a service using a base URL and expected endpoints
 export const messagesApi = createApi({
@@ -7,7 +7,7 @@ export const messagesApi = createApi({
   baseQuery: fetchBaseQuery({ baseUrl: 'https://api-messaging.dealerpolicy.cloud/status-topic-subscriptions' }),
   endpoints: (builder) => ({
     getAll: builder.query<Messages, string>({
-      query: () => "",
+      query: () => ""
     }),
   }),
 })

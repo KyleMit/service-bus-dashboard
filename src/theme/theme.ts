@@ -6,6 +6,9 @@ import { IColor } from '../types/IColor';
 const defaultTheme = createMuiTheme({})
 
 const theme = createMuiTheme({
+  // palette: {
+  //   type: "dark"
+  // },
   typography: {
       allVariants: {
           color: "rgba(0,0,0,.9)",

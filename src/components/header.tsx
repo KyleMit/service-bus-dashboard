@@ -3,8 +3,6 @@ import {red, green, orange} from '@material-ui/core/colors';
 import { useMemo } from "react";
 import { useGetAllQuery } from "../services/messages";
 import { generateChipStyles } from "../theme/theme";
-import { TopicStatus } from "../types/messages";
-
 
 
 const useStyles = makeStyles(theme => ({
@@ -36,7 +34,7 @@ const defaultCount = {
 
 function Header() {
   const classes = useStyles()
-  const { data: messages, error, isLoading } = useGetAllQuery("")
+  const { data: messages , isLoading } = useGetAllQuery("")
 
     const counts: ICounts = useMemo(() => {
         return messages?.topicStatuses?.reduce((acc, cur) => {

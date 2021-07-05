@@ -3,13 +3,12 @@
 ## Todo
 
 * Use Azure static web apps
-* Redux
-  * Native
-  * Toolkit
-  * Slice-Factory
+* Deployment
+  * Git
+  * CI/CD
 * Config Settings
   * URL
-* Display Settings
+* Display Settings / User Preferences
   * Grid/List Toggle
   * Dark/Night Toggle
 * Set count of errors
@@ -20,9 +19,7 @@
 * Caching
 * Query Devops / don't rely on message endpoint
 * Polling Refresh
-* Deployment
-  * Git
-  * CI/CD
+
 * External link indicator on hover
 
 
