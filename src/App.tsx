@@ -1,6 +1,6 @@
 import { Container, makeStyles } from "@material-ui/core";
 import Header from "./components/header";
-
+import { useBadgeCount } from "./hooks/use-badge-count";
 import ServiceBus from "./components/service-bus";
 
 const useStyles = makeStyles(theme => ({
@@ -17,10 +17,10 @@ const useStyles = makeStyles(theme => ({
 
 function App() {
   const classes = useStyles()
+  useBadgeCount();
 
   return (
     <Container maxWidth="lg" className={`App ${classes.root}`} >
-
         <Header />
 
         <main className={classes.main}>
