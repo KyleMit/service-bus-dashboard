@@ -1,8 +1,9 @@
 import { Avatar, Box, Chip , makeStyles, Typography } from "@material-ui/core";
 import {red, green, orange} from '@material-ui/core/colors';
-import { useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useGetAllQuery } from "../services/messages";
 import { generateChipStyles } from "../theme/theme";
+import { setBadge } from "../utilities/badgeApi";
 
 
 const useStyles = makeStyles(theme => ({
@@ -36,16 +37,26 @@ function Header() {
   const classes = useStyles()
   const { data: messages , isLoading } = useGetAllQuery("")
 
-    const counts: ICounts = useMemo(() => {
-        return messages?.topicStatuses?.reduce((acc, cur) => {
-            switch (cur.status) {
-                case "OK": acc.successes += 1; break;
-                case "Error": acc.warnings += 1; break;
-                case "Warning": acc.errors += 1; break;
-            }
-            return acc;
-        }, defaultCount) ?? defaultCount
-    }, [messages])
+  const [freshData, setFreshData] = useState(false)
+
+  const counts: ICounts = useMemo(() => {
+      setFreshData(true)
+      return messages?.topicStatuses?.reduce((acc, cur) => {
+          switch (cur.status) {
+              case "OK": acc.successes += 1; break;
+              case "Error": acc.warnings += 1; break;
+              case "Warning": acc.errors += 1; break;
+          }
+          return acc;
+      }, defaultCount) ?? defaultCount
+  }, [messages])
+
+  useEffect(()=> {
+    if (freshData && counts) {
+      setBadge(counts.errors)
+      setFreshData(false)
+    }
+  }, [freshData, counts])
 
   return (
 

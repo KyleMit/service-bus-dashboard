@@ -3,7 +3,6 @@
 ## Todo
 
 
-* PWA Install
 * Config Settings
   * URL
 * Display Settings / User Preferences
