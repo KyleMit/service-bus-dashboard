@@ -2,10 +2,8 @@
 
 ## Todo
 
-* Use Azure static web apps
-* Deployment
-  * Git
-  * CI/CD
+
+* PWA Install
 * Config Settings
   * URL
 * Display Settings / User Preferences
@@ -13,7 +11,6 @@
   * Dark/Night Toggle
 * Set count of errors
 * Set global data state
-* PWA Install
 * Notification badge
 * Format numbers over 1k
 * Caching
