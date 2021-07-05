@@ -1,4 +1,7 @@
+import { common } from '@material-ui/core/colors';
 import { createMuiTheme } from '@material-ui/core/styles';
+import { CSSProperties } from '@material-ui/core/styles/withStyles';
+import { IColor } from '../types/IColor';
 
 const defaultTheme = createMuiTheme({})
 
@@ -57,3 +60,12 @@ const theme = createMuiTheme({
 });
 
 export default theme;
+
+export const generateChipStyles = (color: IColor): CSSProperties => ({
+  borderColor: color[700],
+  color: color[700],
+  "& .MuiChip-avatar": {
+    backgroundColor: color[700],
+    color: common.white
+  }
+})

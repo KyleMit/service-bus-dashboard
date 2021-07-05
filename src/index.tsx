@@ -1,15 +1,19 @@
-import { CssBaseline, ThemeProvider } from '@material-ui/core';
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import theme from './theme/theme';
+import { CssBaseline, ThemeProvider } from "@material-ui/core"
+import React from "react"
+import ReactDOM from "react-dom"
+import { Provider } from "react-redux"
+import App from "./App"
+import store from "./app/store"
+import theme from "./theme/theme"
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <App />
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider theme={theme}>
+        <CssBaseline />
+        <App />
+      </ThemeProvider>
+    </Provider>
   </React.StrictMode>,
-  document.getElementById('root')
-);
+  document.getElementById("root")
+)

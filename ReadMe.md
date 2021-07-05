@@ -2,6 +2,11 @@
 
 ## Todo
 
+* Use Azure static web apps
+* Redux
+  * Native
+  * Toolkit
+  * Slice-Factory
 * Config Settings
   * URL
 * Display Settings

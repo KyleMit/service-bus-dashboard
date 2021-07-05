@@ -2,10 +2,9 @@ import { CircularProgress, Link, makeStyles, Tooltip } from "@material-ui/core"
 import { DataGrid, GridColDef, GridColumns } from '@material-ui/data-grid'
 import {red, green, yellow, orange} from '@material-ui/core/colors';
 import { Update, Email, ImportExport, Report, FiberManualRecord } from '@material-ui/icons';
-
-import { useEffect, useState } from "react"
-import getMessages, { Messages, SubscriptionStatus, TopicStatus } from "../data/messages"
+import { SubscriptionStatus, TopicStatus } from '../types/messages'
 import { nameof, toTitleCase } from "../utilities/utils"
+import { useGetAllQuery } from "../services/messages";
 
 const rootURL = "https://portal.azure.com/#@dealerpolicy.com/resource/subscriptions/5a9a2845-93e5-4701-9778-bf4abaa57ada/resourceGroups/Production_Messaging/providers/Microsoft.ServiceBus/namespaces/production8dp8messaging/topics"
 
@@ -55,18 +54,8 @@ const useStyles = makeStyles(theme => ({
 
 function ServiceBus() {
     const classes = useStyles();
-    const [messages, setMessages] = useState<Messages | undefined>(undefined)
-    const [isLoading, setIsLoading] = useState(true)
+    const { data: messages, error, isLoading } = useGetAllQuery("")
 
-
-    useEffect(() => {
-        async function loadData() {
-            const msgs = await getMessages();
-            setMessages(msgs)
-            setIsLoading(false)
-        }
-        loadData()
-    })
 
     const allColumns: Partial<GridColDef> = {
         hideSortIcons: true,
@@ -81,7 +70,6 @@ function ServiceBus() {
     }
 
     const textColumn: Partial<GridColDef> = {
-        //resizable: true,
         flex: 1,
         ...allColumns
     }
@@ -201,8 +189,6 @@ function ServiceBus() {
                     columns={cols}
                     rows={sortedRows}
                     pagination={undefined}
-                    // autoPageSize={true}
-                    // autoHeight={true}
                     hideFooter={true}
                     density={"standard"}
                     disableColumnMenu={true}
