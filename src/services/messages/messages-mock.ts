@@ -4,7 +4,8 @@ import data from './sample-data.json';
 export const useGetAllQuery = (str: string) => ({
   data: data as Messages,
   error: false,
-  isLoading: false
+  isLoading: false,
+  refetch: () => data as Messages
 })
 
 export const messagesApi = {

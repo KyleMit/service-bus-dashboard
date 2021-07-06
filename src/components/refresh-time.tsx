@@ -24,7 +24,7 @@ export function RefreshTime() {
 
     return <Box display="flex" alignItems="center" justifyContent="flex-end">
         Last Refreshed: {formatTime(lastRefreshTime)}
-        <IconButton aria-label="refresh data" size="small">
+        <IconButton aria-label="refresh data" size="small" onClick={refreshData}>
             <Refresh />
         </IconButton>
     </Box>

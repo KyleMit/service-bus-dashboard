@@ -9,7 +9,6 @@
 * Display Settings / User Preferences
   * Grid/List Toggle
   * Dark/Night Toggle
-* Format numbers over 1k
 * Caching? (Handled by RTK Query)
 * Query API / don't rely on message endpoint
   * Config Settings
