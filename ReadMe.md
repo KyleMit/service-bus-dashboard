@@ -3,7 +3,9 @@
 ## Todo
 
 
+* Add ErrorBoundary
 * Preferences Pane
+  * Poll refresh rate
 * Display Settings / User Preferences
   * Grid/List Toggle
   * Dark/Night Toggle
@@ -12,11 +14,6 @@
 * Query API / don't rely on message endpoint
   * Config Settings
   * URL
-* Polling Refresh
-  * Reset badge counts
-  * Last Poll time
-  * Manual Refresh Button
-  * Pref to change refresh cadence
 * Group topics w/ [row span](https://github.com/mui-org/material-ui-x/issues/207)
 * Fix horizontal grid scrollbar
 * Click on row to expand details

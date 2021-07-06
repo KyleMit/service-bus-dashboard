@@ -3,6 +3,7 @@ import {red, green, orange} from '@material-ui/core/colors';
 import { useMemo } from "react";
 import { useGetAllQuery } from "../services/messages";
 import { generateChipStyles } from "../theme/theme";
+import { RefreshTime } from "./refresh-time";
 
 
 const useStyles = makeStyles(theme => ({
@@ -61,6 +62,7 @@ function Header() {
             {counts.warnings > 0 && <Chip avatar={<Avatar>{counts.warnings}</Avatar>} label="Warnings" variant="outlined" className={classes.warningChip} />}
             {counts.successes > 0 && <Chip avatar={<Avatar>{counts.successes}</Avatar>} label="OK" variant="outlined" className={classes.okChip} />}
         </Box>}
+        <RefreshTime />
     </header>
 
   );
