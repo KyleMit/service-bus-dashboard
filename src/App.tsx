@@ -1,7 +1,7 @@
 import { Container, makeStyles } from "@material-ui/core";
 import Header from "./components/header";
 import { useBadgeCount } from "./hooks/use-badge-count";
-import ServiceBus from "./components/service-bus";
+import ServiceBusGrid from "./components/service-bus-grid";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -24,7 +24,7 @@ function App() {
         <Header />
 
         <main className={classes.main}>
-          <ServiceBus />
+          <ServiceBusGrid />
         </main>
 
     </Container>

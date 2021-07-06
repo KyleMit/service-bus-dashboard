@@ -3,23 +3,37 @@
 ## Todo
 
 
-* Config Settings
-  * URL
+* Preferences Pane
 * Display Settings / User Preferences
   * Grid/List Toggle
   * Dark/Night Toggle
-* Set count of errors
-* Set global data state
-* Notification badge
 * Format numbers over 1k
-* Caching
-* Query Devops / don't rely on message endpoint
+* Caching? (Handled by RTK Query)
+* Query API / don't rely on message endpoint
+  * Config Settings
+  * URL
 * Polling Refresh
+  * Reset badge counts
+  * Last Poll time
+  * Manual Refresh Button
+  * Pref to change refresh cadence
 * Group topics w/ [row span](https://github.com/mui-org/material-ui-x/issues/207)
-* External link indicator on hover
 * Fix horizontal grid scrollbar
+* Click on row to expand details
+* User Sign in
+  * OAuth
 
+## Other Dashes
 
-[Is there a way to add badge notifications using progressive web apps (PWA)?](https://stackoverflow.com/q/45377604/1366033)
-[Add "badge notification" for progressive web application (PWA)](https://stackoverflow.com/q/46549206/1366033)
+* Subdomains
+  * azdash.dev -> SideNav with react router
+  * sb.azdash.dev -> Service Bus
+  * pr.azdash.dev -> Pull Request
+  * up.azdash.dev -> Availability
+* Individually Installable subdomains
+
+## Notification Badge Api
+
+* [Is there a way to add badge notifications using progressive web apps (PWA)?](https://stackoverflow.com/q/45377604/1366033)
+* [Add "badge notification" for progressive web application (PWA)](https://stackoverflow.com/q/46549206/1366033)
 

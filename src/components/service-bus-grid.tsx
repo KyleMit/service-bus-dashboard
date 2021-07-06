@@ -1,7 +1,7 @@
 import { CircularProgress, Link, makeStyles, Tooltip } from "@material-ui/core"
 import { DataGrid, GridColDef, GridColumns } from '@material-ui/data-grid'
 import  {red, green, yellow, orange } from '@material-ui/core/colors';
-import { Update, Email, ImportExport, Report, FiberManualRecord } from '@material-ui/icons';
+import { Update, Email, ImportExport, Report, FiberManualRecord, OpenInNew } from '@material-ui/icons';
 import { SubscriptionStatus, TopicStatus } from '../types/messages'
 import { nameof, toTitleCase } from "../utilities/utils"
 import { useGetAllQuery } from "../services/messages";
@@ -50,9 +50,23 @@ const useStyles = makeStyles(theme => ({
             background: "white"
         }
     },
+    externalLink: {
+        "&:hover": {
+            "& $externalIcon": {
+                opacity: .7
+            }
+        }
+    },
+    externalIcon: {
+        fontSize: 12,
+        marginBottom: 6,
+        marginLeft: 3,
+        opacity: 0,
+        transition: "opacity .4s ease"
+    }
 }))
 
-function ServiceBus() {
+function ServiceBusGrid() {
     const classes = useStyles();
     const { data: messages, isLoading } = useGetAllQuery("")
 
@@ -89,8 +103,10 @@ function ServiceBus() {
                             href={`${rootURL}/${data.topicName}/`}
                             target="_blank"
                             rel="noreferrer"
+                            className={classes.externalLink}
                         >
                     {data.topicDisplayName}
+                    <OpenInNew className={classes.externalIcon} />
                 </Link>
             },
             ...textColumn
@@ -104,8 +120,10 @@ function ServiceBus() {
                             href={`${rootURL}/${data.topicName}/subscriptions/${data.subscriptionName}`}
                             target="_blank"
                             rel="noreferrer"
+                            className={classes.externalLink}
                         >
                     {data.subscriptionDisplayName}
+                    <OpenInNew className={classes.externalIcon} />
                 </Link>
             },
             ...textColumn
@@ -209,4 +227,4 @@ function ServiceBus() {
     )
 }
 
-export default ServiceBus
+export default ServiceBusGrid
