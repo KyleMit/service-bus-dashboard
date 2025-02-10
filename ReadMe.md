@@ -1,7 +1,8 @@
 # Service Bus Dashboard
 
-## Todo
+Formerly available at `azdash.dev`
 
+## Todo
 
 * Add ErrorBoundary
 * Preferences Pane
